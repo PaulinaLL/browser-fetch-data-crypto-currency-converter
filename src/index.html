@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+
+  <body>
+    <main class="container border d-flex flex-column mt-4">
+      <form action="#" class="d-flex flex-column">
+        <h2 class="ml-0 mb-3 mr-3 mt-3">Crypto-Rate</h2>
+
+        <div class="d-flex align-items-start">
+          <label class="bg-primary rounded text-white p-2" for="crypto"
+            >Crypto-currency:</label
+          >
+          <select
+            name="crypto"
+            class="field-select p-2 rounded text-dark flex-grow-1"
+            id="crypto"
+          >
+            <option value="Choose">Choose...</option>
+            <option value="btc">Bitcoin (BTC)</option>
+            <option value="blk"> Blackcoin (BLK)</option>
+            <option value="xmr">Monero XMR</option>
+          </select>
+        </div>
+        <label
+          >Amount:
+          <input
+            type="text"
+            class="m-2 p-1 rounded"
+            id="userInput"
+            value=""
+            placeholder="0"
+          />
+        </label>
+        <div class="d-flex align-items-start">
+          <label for="normalCur" class="bg-danger rounded text-white p-2"
+            >Currency:</label
+          >
+          <select
+            name=""
+            class="field-select p-2 rounded text-dark flex-grow-1"
+            id="normalCur"
+          >
+            <option value="Choose">Choose...</option>
+            <option value="eur">Euro (EUR)</option>
+            <option value="usd">USD Dolar (USD)</option>
+            <option value="gbp">UK Pound (GBP)</option>
+          </select>
+        </div>
+        <label for="result"
+          >Result:
+          <input
+            type="text"
+            class="m-2 p-1 rounded"
+            id="result"
+            value=""
+            class="bg-light"
+            placeholder="0"
+          />
+        </label>
+        <input
+          type="submit"
+          class="align-self-end bg-primary text-white m-2 p-1 border-0 rounded"
+          value="Convert"
+        />
+      </form>
+    </main>
+  </body>
+</html>
