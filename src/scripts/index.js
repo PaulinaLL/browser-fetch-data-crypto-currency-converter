@@ -11,7 +11,7 @@ const result = document.getElementById("result");
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log(" dom fully loaded");
-  form.addEventListener("submit", e => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     const wholeURL = `${baseURL}/${crypto.value}-${currency.value}`;
     convertCurrency(wholeURL);
@@ -20,15 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function convertCurrency(wholeURL) {
   fetch(wholeURL)
-    .then(response => {
+    .then((response) => {
       if (!response.ok) {
         throw new Error();
       } else {
         return response.json();
       }
     })
-    .then(data => {
-      const calculation = data.ticker.price * userInput.value;
+    .then((data) => {
+      const calculation = data.ticker.price * amount.value;
       result.value = calculation;
     })
     .catch(() => {});
