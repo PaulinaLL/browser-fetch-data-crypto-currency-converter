@@ -1,4 +1,6 @@
 # browser-fetch-data-crypto-currency-converter
+
+![Crypto Currency Converter](crypto.gif)
 a simple cryptocurrency converter
 
 - the user is able to select a crypto currency and input the price
