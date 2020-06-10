@@ -8,50 +8,53 @@
   </head>
 
   <body>
-    <main class="container border d-flex flex-column mt-4">
+    <main
+      class="container border d-flex flex-column justify-content-center"
+      style="height: 100vh;"
+    >
       <form action="#" class="d-flex flex-column">
-        <h2 class="ml-0 mb-3 mr-3 mt-3">Crypto-Rate</h2>
+        <h2 class="m-3">Crypto-Rate</h2>
 
-        <div class="d-flex align-items-start">
-          <label class="bg-primary rounded text-white p-2" for="crypto"
-            >Crypto-currency:</label
-          >
-          <select
-            name="crypto"
-            class="field-select p-2 rounded text-dark flex-grow-1"
-            id="crypto"
-          >
-            <option value="Choose">Choose...</option>
-            <option value="btc">Bitcoin (BTC)</option>
-            <option value="blk"> Blackcoin (BLK)</option>
-            <option value="xmr">Monero XMR</option>
-          </select>
-        </div>
-        <label
+        <label class="bg-primary rounded text-white p-2" for="crypto"
+          >Crypto-currency:</label
+        >
+        <select
+          name="crypto"
+          class="field-select p-2 rounded text-dark flex-grow-1"
+          id="crypto"
+        >
+          <option value="Choose">Choose...</option>
+          <option value="btc">Bitcoin (BTC)</option>
+          <option value="blk"> Blackcoin (BLK)</option>
+          <option value="xmr">Monero XMR</option>
+        </select>
+
+        <label for="userInput"
           >Amount:
           <input
             type="text"
             class="m-2 p-1 rounded"
             id="userInput"
             value=""
+            class="bg-light"
             placeholder="0"
           />
         </label>
-        <div class="d-flex align-items-start">
-          <label for="normalCur" class="bg-danger rounded text-white p-2"
-            >Currency:</label
-          >
-          <select
-            name=""
-            class="field-select p-2 rounded text-dark flex-grow-1"
-            id="normalCur"
-          >
-            <option value="Choose">Choose...</option>
-            <option value="eur">Euro (EUR)</option>
-            <option value="usd">USD Dolar (USD)</option>
-            <option value="gbp">UK Pound (GBP)</option>
-          </select>
-        </div>
+
+        <label for="normalCur" class="bg-danger rounded text-white p-2"
+          >Currency:</label
+        >
+        <select
+          name=""
+          class="field-select p-2 rounded text-dark flex-grow-1"
+          id="normalCur"
+        >
+          <option value="Choose">Choose...</option>
+          <option value="eur">Euro (EUR)</option>
+          <option value="usd">USD Dolar (USD)</option>
+          <option value="gbp">UK Pound (GBP)</option>
+        </select>
+
         <label for="result"
           >Result:
           <input
@@ -65,7 +68,7 @@
         </label>
         <input
           type="submit"
-          class="align-self-end bg-primary text-white m-2 p-1 border-0 rounded"
+          class="align-self-end bg-primary text-white m-2 rounded"
           value="Convert"
         />
       </form>
