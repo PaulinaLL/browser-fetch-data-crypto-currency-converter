@@ -1,8 +1,4 @@
 # browser-fetch-data-crypto-currency-converter
-
-![Crypto Currency Converter](crypto.gif)
-
-
 a simple cryptocurrency converter
 
 - the user is able to select a crypto currency and input the price
@@ -12,3 +8,6 @@ a simple cryptocurrency converter
 ***
 - basic style with bootstrap
 - data fetched from: [api.cryptonator](https://api.cryptonator.com)
+
+
+![Crypto Currency Converter](crypto.gif)
